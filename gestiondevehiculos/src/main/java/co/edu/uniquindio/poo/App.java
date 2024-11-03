@@ -1,9 +1,5 @@
 package co.edu.uniquindio.poo;
 
-/**
- * Hello world!
- *
- */
 public class App {
     public static void main(String[] args) {
         GestionAlquiler gestion = new GestionAlquiler();
@@ -16,9 +12,16 @@ public class App {
         gestion.agregarVehiculo(moto);
         gestion.agregarVehiculo(camioneta);
 
-        System.out.println("Costo reserva Auto: " + gestion.calcularReservaVehiculo("ABC123", 3));
-        System.out.println("Costo reserva Moto: " + gestion.calcularReservaVehiculo("XYZ789", 3));
-        System.out.println("Costo reserva Camioneta: " + gestion.calcularReservaVehiculo("LMN456", 3));
+        Cliente cliente1 = new Cliente("Juan Perez", "Calle 123", "123456789", "juan@example.com", "C001");
+        Cliente cliente2 = new Cliente("Maria Gomez", "Avenida 456", "987654321", "maria@example.com", "C002");
 
+        gestion.agregarCliente(cliente1);
+        gestion.agregarCliente(cliente2);
+
+        gestion.agregarReserva("ABC123", "C001", 3);
+        gestion.agregarReserva("XYZ78F", "C002", 5);
+
+        System.out.println("---- Reservas ----");
+        gestion.mostrarReservas();
     }
 }
