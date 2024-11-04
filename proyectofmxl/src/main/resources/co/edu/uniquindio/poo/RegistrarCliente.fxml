@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="924.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.RegistroClienteViewController">
+   <children>
+      <Accordion layoutX="158.0" layoutY="228.0" />
+      <Label layoutX="36.0" layoutY="110.0" text="cedula" />
+      <TextField fx:id="txtCedula" layoutX="89.0" layoutY="105.0" />
+      <TextField fx:id="txtNombre" layoutX="353.0" layoutY="105.0" />
+      <Label layoutX="300.0" layoutY="110.0" text="nombre" />
+      <TextField fx:id="txtTelefono" layoutX="353.0" layoutY="178.0" />
+      <Label layoutX="293.0" layoutY="183.0" text="telefono" />
+      <TextField fx:id="txtCorreo" layoutX="204.0" layoutY="261.0" />
+      <Label layoutX="151.0" layoutY="266.0" text="correo" />
+      <TextField fx:id="txtDireccion" layoutX="99.0" layoutY="178.0" />
+      <Label layoutX="38.0" layoutY="183.0" text="direccion" />
+      <TableView fx:id="tableClientes" layoutX="32.0" layoutY="416.0" prefHeight="200.0" prefWidth="532.0">
+        <columns>
+        <TableColumn fx:id="tcCedula" prefWidth="75.0" text="Cedula" />
+        <TableColumn fx:id="tcNombre" prefWidth="75.0" text="Nombre" />
+        <TableColumn fx:id="tcTelefono" prefWidth="75.0" text="Telefono" />
+        <TableColumn fx:id="tcCorreo" prefWidth="75.0" text="Correo" />
+        <TableColumn fx:id="tDireccion" prefWidth="75.0" text="Direccion" />
+        </columns>
+      </TableView>
+      <Button layoutX="250.0" layoutY="347.0" mnemonicParsing="false" text="agregar" onAction="#AgregarClientes" />
+      <Button layoutX="67.0" layoutY="347.0" mnemonicParsing="false" text="editar" onAction="#EditarClientes" />
+      <Button layoutX="475.0" layoutY="347.0" mnemonicParsing="false" text="eliminar" onAction="#EliminarClientes"  />
+   </children>
+</AnchorPane>
