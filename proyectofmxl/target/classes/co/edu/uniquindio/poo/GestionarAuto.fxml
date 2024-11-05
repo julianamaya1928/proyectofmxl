@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.RegistroAutoViewController">
+    <children>
+        <Label layoutX="14.0" layoutY="77.0" text="Matricula" />
+        <TextField fx:id="txtMatricula" layoutX="93.0" layoutY="72.0" />
+        <TextField fx:id="txtMarca" layoutX="370.0" layoutY="72.0" />
+        <Label layoutX="291.0" layoutY="77.0" text="Marca" />
+        <TextField fx:id="txtModelo" layoutX="93.0" layoutY="129.0" />
+        <Label layoutX="14.0" layoutY="134.0" text="Modelo" />
+        <TextField fx:id="txtAnio" layoutX="370.0" layoutY="129.0" />
+        <Label layoutX="291.0" layoutY="134.0" text="año" />
+        <TextField fx:id="txtNumPuertas" layoutX="226.0" layoutY="201.0" />
+        <Label layoutX="88.0" layoutY="206.0" text="numero de puertas" />
+        <TableView fx:id="tableAutos" layoutX="40.0" layoutY="340.0" prefHeight="200.0" prefWidth="506.0">
+        <columns>
+            <TableColumn fx:id="tcMatricula" prefWidth="75.0" text="Matricula" />
+            <TableColumn fx:id="tcMarca" prefWidth="75.0" text="Marca" />
+            <TableColumn fx:id="tcModelo" prefWidth="75.0" text="Modelo" />
+            <TableColumn fx:id="tcAnio" prefWidth="75.0" text="Año" />
+            <TableColumn fx:id="tcNumPuertas" prefWidth="75.0" text="Numero Puertas" />
+        </columns>
+        </TableView>
+    <Button layoutX="116.0" layoutY="280.0" mnemonicParsing="false" onAction="#AgregarAuto" text="agregar" />
+    <!-- <Button layoutX="67.0" layoutY="347.0" mnemonicParsing="false" text="editar" onAction="#EditarAuto" /> -->
+    <Button layoutX="427.0" layoutY="280.0" mnemonicParsing="false" onAction="#EliminarAuto" text="eliminar" />
+    </children>
+</AnchorPane>

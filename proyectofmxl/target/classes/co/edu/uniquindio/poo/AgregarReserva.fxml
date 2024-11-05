@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.AgregarReservaViewController">
+    <children>
+    <DatePicker fx:id="txtFechaIni" layoutX="47.0" layoutY="38.0" />
+    <DatePicker fx:id="txtFechaFin" layoutX="47.0" layoutY="79.0" />
+    <ComboBox fx:id="SelecClientes" layoutX="47.0" layoutY="134.0" prefWidth="150.0" />
+    <ComboBox fx:id="SelectVehiculo" layoutX="47.0" layoutY="180.0" prefWidth="150.0" />
+    <TextField fx:id="LabelCosto" layoutX="47.0" layoutY="243.0" />
+    <Button onAction="#AgregarReserva" layoutX="90.0" layoutY="303.0" mnemonicParsing="false" text="Agregar" />
+    <Button onAction="#AgregarActualizar" layoutX="216.0" layoutY="303.0" mnemonicParsing="false" text="Actualizar" />
+    <TableView fx:id="TableReserva" layoutX="41.0" layoutY="348.0" prefHeight="118.0" prefWidth="393.0">
+        <columns>
+            <TableColumn fx:id="TcFechaIni" prefWidth="75.0" text="Fecha Inicio" />
+            <TableColumn fx:id="TcTcFechaFin" prefWidth="75.0" text="Fecha Final" />
+            <TableColumn fx:id="TcMatriculaReserva" prefWidth="75.0" text="Matricula" />
+            <TableColumn fx:id="TcClienteReserva" prefWidth="75.0" text="Cliente" />
+            <TableColumn fx:id="TcCosto" prefWidth="75.0" text="Costo" />
+        </columns>
+    </TableView>
+    <Button onAction="#EliminarReserva" layoutX="90.0" layoutY="490.0" mnemonicParsing="false" text="Eliminar" />
+    <Label layoutX="277.0" layoutY="43.0" text="Fecha inicio" />
+    <Label layoutX="277.0" layoutY="84.0" text="Fecha Fin" />
+    <Label layoutX="216.0" layoutY="139.0" text="Cliente" />
+    <Label layoutX="208.0" layoutY="185.0" text="Vehiculo" />
+    <Label layoutX="248.0" layoutY="248.0" />
+    <Button onAction="#CalcularCosto" layoutX="248.0" layoutY="243.0" mnemonicParsing="false" text="Calcular costo" />
+    </children>
+</AnchorPane>

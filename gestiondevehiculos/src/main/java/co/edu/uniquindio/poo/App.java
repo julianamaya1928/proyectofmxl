@@ -5,7 +5,7 @@ public class App {
         GestionAlquiler gestion = new GestionAlquiler();
 
         Auto auto = new Auto("ABC123", "Toyota", "Corolla", 2020, 4);
-        Moto moto = new Moto("XYZ78F", "Honda", "CB500", 2022, true);
+        Moto moto = new Moto("XYZ78F", "Honda", "CB500", 2022, false);
         Camioneta camioneta = new Camioneta("LMN456", "Ford", "Ranger", 2021, 1.5);
 
         gestion.agregarVehiculo(auto);
@@ -21,7 +21,7 @@ public class App {
         gestion.agregarReserva("ABC123", "C001", 3);
         gestion.agregarReserva("XYZ78F", "C002", 5);
 
-        System.out.println("---- Reservas ----");
+        System.out.println("Reservas");
         gestion.mostrarReservas();
     }
 }

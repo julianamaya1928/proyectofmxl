@@ -1,14 +1,21 @@
 package co.edu.uniquindio.poo.model;
 
-import java.util.LinkedList;
 
 public class Camioneta extends Vehiculo {
     private double capacidadCarga;
     private static final double TARIFA_BASE = 30.0;
     private static final double PORCENTAJE_EXTRA = 0.1;
 
-    public Camioneta(String matricula, String marca, String modelo, int anio, double capacidadCarga) {
+    public Camioneta(String matricula, String marca, String modelo, String anio, double capacidadCarga) {
         super(matricula, marca, modelo, anio);
+        this.capacidadCarga = capacidadCarga;
+    }
+
+    public double getCapacidadCarga() {
+        return capacidadCarga;
+    }
+
+    public void setCapacidadCarga(double capacidadCarga) {
         this.capacidadCarga = capacidadCarga;
     }
 

@@ -19,13 +19,13 @@
       <TextField fx:id="txtDireccion" layoutX="99.0" layoutY="178.0" />
       <Label layoutX="38.0" layoutY="183.0" text="direccion" />
       <TableView fx:id="tableClientes" layoutX="32.0" layoutY="416.0" prefHeight="200.0" prefWidth="532.0">
-        <columns>
-        <TableColumn fx:id="tcCedula" prefWidth="75.0" text="Cedula" />
-        <TableColumn fx:id="tcNombre" prefWidth="75.0" text="Nombre" />
-        <TableColumn fx:id="tcTelefono" prefWidth="75.0" text="Telefono" />
-        <TableColumn fx:id="tcCorreo" prefWidth="75.0" text="Correo" />
-        <TableColumn fx:id="tDireccion" prefWidth="75.0" text="Direccion" />
-        </columns>
+         <columns>
+         <TableColumn fx:id="tcCedula" prefWidth="75.0" text="Cedula" />
+         <TableColumn fx:id="tcNombre" prefWidth="75.0" text="Nombre" />
+         <TableColumn fx:id="tcTelefono" prefWidth="75.0" text="Telefono" />
+         <TableColumn fx:id="tcCorreo" prefWidth="75.0" text="Correo" />
+         <TableColumn fx:id="tDireccion" prefWidth="75.0" text="Direccion" />
+         </columns>
       </TableView>
       <Button layoutX="250.0" layoutY="347.0" mnemonicParsing="false" text="agregar" onAction="#AgregarClientes" />
       <Button layoutX="67.0" layoutY="347.0" mnemonicParsing="false" text="editar" onAction="#EditarClientes" />
